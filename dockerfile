@@ -15,3 +15,7 @@ EXPOSE 3000
 
 # Comando para iniciar o aplicativo quando o container for executado
 CMD ["node", "app.js"]
+
+
+docker build -t nodejs-app .
+docker run -p 3000:3000 -d nodejs-app
